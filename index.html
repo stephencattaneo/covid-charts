@@ -4,8 +4,25 @@
     <meta charset="utf-8">
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <style>
+      div.tooltip {
+        position: absolute;
+        text-align: center;
+        padding: .5rem;
+        background: #FFFFFF;
+        color: #313639;
+        border: 1px solid #313639;
+        border-radius: 8px;
+        pointer-events: none;
+        font-size: 1.3rem;
+      }
+    </style>
   </head>
   <body>
+    <div>
+      Number of people in Alameda County: <a href='https://en.wikipedia.org/wiki/Alameda_County,_California'>1,671,329</a> <br>
+      Number of ICU beds in Alameda County: <a href='http://www.acphd.org/media/441048/hospital-expansion-tables.pdf'>300</a> <br>
+    </div>
     <div id="my_dataviz"></div>
     <script src='app.js'></script>
   </body>
